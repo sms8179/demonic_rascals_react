@@ -1,0 +1,125 @@
+#root {
+  background-color: #0D0D13;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Dirtyline36daysoftype2022";
+  color: #ffffff;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 2.75rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-family: "Poppins-Regular";
+  color: #ffffff
+}
+
+a {
+  text-decoration: none;
+}
+
+.pill_button {
+  display: flex;
+  align-items: center;
+  border-radius: 999rem;
+  font-family: "Poppins-Medium";
+  font-size: 1.1rem;
+  padding: 1rem 3rem;
+  border: none;
+}
+
+.pill_button svg {
+  height: 0.65rem;
+  margin-left: 0.5rem;
+}
+
+#button_connect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  background-color: #1B1B25;
+  margin: 2rem;
+}
+
+#button_connect svg {
+  fill: #ffffff;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  position: relative;
+  flex: 9;
+  background-image: url("assets/img/bg_4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4rem;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+#corner_radius_top_left {
+  position: absolute;
+  left: 0;
+  bottom: 20rem;
+  height: 4rem;
+  width: 4rem;
+  background: radial-gradient(circle at 100% 0%, transparent 4rem, #0D0D13 4rem);
+}
+
+#bottom_left {
+  position: absolute;
+  order: 3;
+  background-color: #0D0D13;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0 4rem 0 4rem;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 1.5rem 0 0;
+}
+
+#bottom_left_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  background-color: #1B1B25;
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+#corner_radius_bottom_right {
+  position: absolute;
+  left: 20rem;
+  bottom: 0;
+  height: 4rem;
+  width: 4rem;
+  background: radial-gradient(circle at 100% 0%, transparent 4rem, #0D0D13 4rem);
+}
