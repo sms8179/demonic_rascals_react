@@ -1,7 +1,8 @@
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import './Nav.css'
 import user_image from "../assets/img/177a9b595f4ff683608cf26d6d04d01d@2x.png"
 
-export default function Nav() {
+const Nav = () => {
 
     return (
     <>
@@ -58,3 +59,5 @@ export default function Nav() {
     </>
     )
 }
+
+export default Nav

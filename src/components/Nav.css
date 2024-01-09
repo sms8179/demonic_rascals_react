@@ -2,7 +2,6 @@ nav {
     flex: 3;
     display: flex;
     height: 100%;
-    max-width: 9rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -23,10 +22,10 @@ nav {
     align-items: center;
 
     svg {
-        width: 1.5rem;
+        width: 25%;
+        min-width: 1rem;
         fill: #FFFFFF;
         opacity: 0.5;
-        margin: 0 1rem 1rem 1rem;
     }
 
     &:hover {
@@ -47,7 +46,7 @@ nav {
 
     &#nav_logo {
         svg {
-            width: 4rem;
+            width: 60%;
         }
     }
 }
@@ -63,9 +62,10 @@ nav {
 
 #user_image {
     width: 100%;
+    height: auto;
     border-radius: 100%;
     transition: 0.2s ease-in-out;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &:hover {
         border: 0.2rem var(--accent-color) solid;
     }
@@ -73,6 +73,6 @@ nav {
 
 #line {
     stroke: #8e8b9c;
-    width: 50%;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
