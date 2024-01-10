@@ -13,7 +13,7 @@ h2,
 h3,
 h4 {
 	font-family: "Dirtyline36daysoftype2022";
-	color: #ffffff;
+	color: var(--white);
 	margin: 0;
 }
 
@@ -35,7 +35,7 @@ h4 {
 
 p {
 	font-family: "Poppins-Regular";
-	color: #ffffff
+	color: var(--white)
 }
 
 a {
@@ -68,13 +68,13 @@ a {
 	position: absolute;
 	top: 0;
 	right: 0;
-	color: #ffffff;
-	background-color: #1B1B25;
+	color: var(--white);
+	background-color: var(--black);
 	margin: 2rem;
 }
 
 #button_connect svg {
-	fill: #ffffff;
+	fill: var(--white);
 }
 
 .left {
@@ -101,7 +101,7 @@ a {
 #corner_radius_top_left {
 	position: absolute;
 	left: 0;
-	bottom: 20rem;
+	bottom: 20.5rem;
 	height: 4rem;
 	width: 4rem;
 	background: radial-gradient(circle at 100% 0%, transparent 4rem, var(--black) 4rem);
@@ -111,8 +111,8 @@ a {
 	position: absolute;
 	order: 3;
 	background-color: var(--black);
-	height: 20rem;
-	width: 20rem;
+	height: 20.5rem;
+	width: 20.5rem;
 	border-radius: 0 4rem 0 4rem;
 	bottom: 0;
 	left: 0;
@@ -167,7 +167,7 @@ a {
 		height: 5rem;
 		border-radius: 100%;
 		border: none;
-		padding: 0.5rem;
+		padding: 1rem;
 		box-shadow: 0px 0px 28px var(--accent-color);
 
 		svg path {
@@ -180,7 +180,7 @@ a {
 
 .right #corner_radius_bottom_right {
 	position: absolute;
-	left: 20rem;
+	left: 20.5rem;
 	bottom: 0;
 	height: 4rem;
 	width: 4rem;
