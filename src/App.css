@@ -104,31 +104,78 @@ a {
 	bottom: 20rem;
 	height: 4rem;
 	width: 4rem;
-	background: radial-gradient(circle at 100% 0%, transparent 4rem, #0D0D13 4rem);
+	background: radial-gradient(circle at 100% 0%, transparent 4rem, var(--black) 4rem);
 }
 
 .right #bottom_left {
 	position: absolute;
 	order: 3;
-	background-color: #0D0D13;
+	background-color: var(--black);
 	height: 20rem;
 	width: 20rem;
 	border-radius: 0 4rem 0 4rem;
 	bottom: 0;
 	left: 0;
 	padding: 1.5rem 1.5rem 0 0;
+
+	#bottom_left_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		height: 100%;
+		width: 100%;
+		background-color: var(--dark-gray);
+		border-radius: 4rem;
+		padding: 2rem;
+
+		#corner_radius_top_left_small {
+			position: absolute;
+			top: 1.5rem;
+			right: 8rem;
+			height: 2rem;
+			width: 2rem;
+			background: radial-gradient(circle at 0% 100%, transparent 2rem, var(--black) 2rem);
+		}
+
+		#corner_radius_bottom_right_small {
+			position: absolute;
+			top: 8rem;
+			right: 1.5rem;
+			height: 2rem;
+			width: 2rem;
+			background: radial-gradient(circle at 0% 100%, transparent 2rem, var(--black) 2rem);
+		}
+	}
 }
 
-.right #bottom_left_content {
+#button_smiley {
+	position: absolute;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
-	height: 100%;
-	width: 100%;
-	background-color: #1B1B25;
-	border-radius: 3rem;
-	padding: 2rem;
+	align-items: center;
+	top: 0;
+	right: 0;
+	background-color: var(--black);
+	width: 8rem;
+	height: 8rem;
+	border-radius: 0 4rem 0 4rem;
+
+	button {
+		background-color: var(--accent-color);
+		width: 5rem;
+		height: 5rem;
+		border-radius: 100%;
+		border: none;
+		padding: 0.5rem;
+		box-shadow: 0px 0px 28px var(--accent-color);
+
+		svg path {
+			width: 100%;
+			height: 100%;
+			fill: var(--black);
+		}
+	}
 }
 
 .right #corner_radius_bottom_right {
@@ -137,7 +184,7 @@ a {
 	bottom: 0;
 	height: 4rem;
 	width: 4rem;
-	background: radial-gradient(circle at 100% 0%, transparent 4rem, #0D0D13 4rem);
+	background: radial-gradient(circle at 100% 0%, transparent 4rem, var(--black) 4rem);
 }
 
 .left #bottom {

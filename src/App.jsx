@@ -22,49 +22,32 @@ function App() {
 						<button id="button_connect" className='pill_button'>
 							Connect
 							<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.156 10.392">
-								<defs>
-									<clipPath id="clip-path">
-										<rect id="Rectangle_5" data-name="Rectangle 5" width="10.392" height="10.156" />
-									</clipPath>
-								</defs>
-								<g id="Group_7116" data-name="Group 7116" transform="translate(10.156) rotate(90)">
-									<g id="Group_9" data-name="Group 9" transform="translate(0 0)">
-										<g id="Group_3" data-name="Group 3" transform="translate(0 0)" clip-path="url(#clip-path)">
-											<path id="Path_2" data-name="Path 2" d="M10.392,1.855,8.616,0H0V8.348l1.965,1.808V6.021q0-1.509-.032-2.736l6.9,6.682L10.2,8.506,3.3,1.824q1.227.032,2.752.031Z" transform="translate(0 0)" />
-										</g>
-									</g>
-								</g>
+								<rect id="Rectangle_5" data-name="Rectangle 5" width="10.392" height="10.156" />
+								<path id="Path_2" data-name="Path 2" d="M10.392,1.855,8.616,0H0V8.348l1.965,1.808V6.021q0-1.509-.032-2.736l6.9,6.682L10.2,8.506,3.3,1.824q1.227.032,2.752.031Z" transform="translate(0 0)" />
 							</svg>
 						</button>
 					</a>
 				</div>
-				<div id="corner_radius_top_left"></div>
 				<div id="bottom_left">
+					<span id="corner_radius_top_left"></span>
 					<div id="bottom_left_content">
+						<span id="corner_radius_top_left_small"></span>
 						<p>5K Supply</p>
 						<h3>darK AEsthetiCs</h3>
 						<p>Mischievous charm</p>
-						<button>
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.066" height="29.066" viewBox="0 0 29.066 29.066">
-								<defs>
-									<clipPath id="clip-path">
-										<rect id="Rectangle_23" data-name="Rectangle 23" width="29.066" height="29.066" fill="none" />
-									</clipPath>
-								</defs>
-								<g id="Group_7128" data-name="Group 7128" transform="translate(0 0)">
-									<g id="Group_7127" data-name="Group 7127" transform="translate(0 0)" clip-path="url(#clip-path)">
-										<path id="Path_15" data-name="Path 15" d="M11.748,13.587c.889,0,1.609-1.721,1.609-3.844S12.637,5.9,11.748,5.9,10.139,7.62,10.139,9.742s.72,3.844,1.609,3.844" transform="translate(-0.876 -0.51)" fill="#040405" />
-										<path id="Path_16" data-name="Path 16" d="M18.991,13.587c.889,0,1.609-1.721,1.609-3.844S19.88,5.9,18.991,5.9,17.382,7.62,17.382,9.742s.72,3.844,1.609,3.844" transform="translate(-1.503 -0.51)" fill="#040405" />
-										<path id="Path_17" data-name="Path 17" d="M27.923,8.876a14.586,14.586,0,1,0,1.143,5.657,14.59,14.59,0,0,0-1.143-5.657m-1.2,10.8A13.225,13.225,0,0,1,3.566,21.927,13.251,13.251,0,0,1,2.346,9.385a13.229,13.229,0,0,1,24.373,10.3" transform="translate(0 0)" fill="#040405" />
-										<path id="Path_18" data-name="Path 18" d="M25.342,14.72h0a1.378,1.378,0,0,1-.456.3,1.427,1.427,0,0,1-.164.054h-.712a1.555,1.555,0,0,1-.164-.054,1.378,1.378,0,0,1-.456-.3.654.654,0,0,0-.925.925,2.661,2.661,0,0,0,1.326.724,8.959,8.959,0,0,1-.686,2.876A9.027,9.027,0,0,1,7.3,20.778a8.981,8.981,0,0,1-1.521-4.433,2.583,2.583,0,0,0,.336-.111,2.672,2.672,0,0,0,.889-.59.654.654,0,0,0-.925-.925,1.378,1.378,0,0,1-.456.3,1.427,1.427,0,0,1-.164.054H4.752a1.473,1.473,0,0,1-.163-.054,1.359,1.359,0,0,1-.456-.3.654.654,0,1,0-.925.925,2.685,2.685,0,0,0,.89.59,2.528,2.528,0,0,0,.375.121,10.334,10.334,0,0,0,20.633-.027,2.718,2.718,0,0,0,.271-.093,2.681,2.681,0,0,0,.889-.59.654.654,0,0,0-.925-.925" transform="translate(-0.261 -1.256)" fill="#040405" />
-									</g>
-								</g>
-							</svg>
-						</button>
-						<div id="corner_radius_bottom_right"></div>
+						<div id="button_smiley">
+							<button>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.066 29.066">
+									<path id="Path_15" data-name="Path 15" d="M11.748,13.587c.889,0,1.609-1.721,1.609-3.844S12.637,5.9,11.748,5.9,10.139,7.62,10.139,9.742s.72,3.844,1.609,3.844" transform="translate(-0.876 -0.51)" />
+									<path id="Path_16" data-name="Path 16" d="M18.991,13.587c.889,0,1.609-1.721,1.609-3.844S19.88,5.9,18.991,5.9,17.382,7.62,17.382,9.742s.72,3.844,1.609,3.844" transform="translate(-1.503 -0.51)" />
+									<path id="Path_17" data-name="Path 17" d="M27.923,8.876a14.586,14.586,0,1,0,1.143,5.657,14.59,14.59,0,0,0-1.143-5.657m-1.2,10.8A13.225,13.225,0,0,1,3.566,21.927,13.251,13.251,0,0,1,2.346,9.385a13.229,13.229,0,0,1,24.373,10.3" transform="translate(0 0)" />
+									<path id="Path_18" data-name="Path 18" d="M25.342,14.72h0a1.378,1.378,0,0,1-.456.3,1.427,1.427,0,0,1-.164.054h-.712a1.555,1.555,0,0,1-.164-.054,1.378,1.378,0,0,1-.456-.3.654.654,0,0,0-.925.925,2.661,2.661,0,0,0,1.326.724,8.959,8.959,0,0,1-.686,2.876A9.027,9.027,0,0,1,7.3,20.778a8.981,8.981,0,0,1-1.521-4.433,2.583,2.583,0,0,0,.336-.111,2.672,2.672,0,0,0,.889-.59.654.654,0,0,0-.925-.925,1.378,1.378,0,0,1-.456.3,1.427,1.427,0,0,1-.164.054H4.752a1.473,1.473,0,0,1-.163-.054,1.359,1.359,0,0,1-.456-.3.654.654,0,1,0-.925.925,2.685,2.685,0,0,0,.89.59,2.528,2.528,0,0,0,.375.121,10.334,10.334,0,0,0,20.633-.027,2.718,2.718,0,0,0,.271-.093,2.681,2.681,0,0,0,.889-.59.654.654,0,0,0-.925-.925" transform="translate(-0.261 -1.256)" />
+								</svg>
+							</button>
+						</div>
+						<span id="corner_radius_bottom_right_small"></span>
 					</div>
-					<div id="bottom_right">
-					</div>
+					<span id="corner_radius_bottom_right"></span>
 				</div>
 			</div>
 		</div>
