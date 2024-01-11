@@ -39,6 +39,7 @@ h5 {
 	font-family: "Poppins-ExtraLight";
 	font-size: 4rem;
 	color: white;
+	line-height: 1;
 }
 
 p {
@@ -49,6 +50,7 @@ p {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 #container {
@@ -59,8 +61,7 @@ a {
 }
 
 .pill_button {
-	display: flex;
-	align-items: center;
+	display: inline-block;
 	border-radius: 999rem;
 	font-family: "Poppins-Medium";
 	font-size: 1.1rem;
@@ -78,7 +79,7 @@ a {
 	top: 0;
 	right: 0;
 	color: var(--white);
-	background-color: var(--black);
+	background-color: var(--dark-gray);
 	margin: 2.25rem;
 }
 
@@ -162,11 +163,23 @@ a {
 		}
 	}
 
-	h1 {
+	#text {
 		position: absolute;
 		top: 8rem;
 		left: 8rem;
-		text-shadow: var(--black-transparent) 0 0.25rem 1rem;
+
+		h1, p {
+			display: inline;
+			text-shadow: 0 0.25rem 1rem var(--black-transparent);
+		}
+
+		h1 {
+			margin-right: 2rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
 	}
 }
 
@@ -193,6 +206,10 @@ a {
 		width: 20.5rem;
 		background-color: var(--black);
 		z-index: -1;
+	}
+
+	p:nth-of-type(2) {
+		font-size: 1.25rem;
 	}
 
 	.internal_corner {
@@ -226,8 +243,8 @@ a {
 		justify-content: space-between;
 		height: 100%;
 		width: 100%;
-		background-color: var(--black-transparent);
-		padding: 2rem 2rem 2rem 3rem;
+		background-color: var(--dark-gray-transparent);
+		padding: 2.5rem 2rem 2.5rem 3rem;
 		clip-path: url("#bottom_right_clip");
 
 		#content_left {
@@ -235,25 +252,50 @@ a {
 			flex-direction: column;
 			flex: 2;
 			height: 50%;
+
+			p {
+				font-size: 0.75rem;;
+			}
 		}
 
 		#content_right {
+			flex: 4;
+			height: 100%;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			flex: 5;
-			height: 100%;
+			align-items: flex-start;
+			justify-content: space-around;
+
+			a {
+				background-color: var(--accent-color);
+				color: var(--black);
+				display: inline-block;
+				box-shadow: 0 0.5rem 1rem 0.25rem var(--accent-color-transparent);
+			}
+
+			button {
+				background-color: var(--accent-color);
+				color: var(--black);
+				padding: 1rem;
+				width: 3.625rem;
+				box-shadow: 0 0.5rem 1rem 0.25rem var(--accent-color-transparent);
+			}
 		}
 	}
 
 	#button_arrow {
 		width: 7rem;
 		height: 7rem;
-		background-color: var(--black);
+		background-color: var(--dark-gray);
 		border-radius: 50%;
 		position: absolute;
 		bottom: 1rem;
 		left: 1rem;
 		border: none;
+		padding: 2.5rem;
+
+		svg {
+			fill: var(--white);
+		}
 	}
 }

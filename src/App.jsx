@@ -22,7 +22,11 @@ function App() {
 							<path id="Path_34" data-name="Path 34" d="M10.392,1.855,8.616,0H0V8.348l1.965,1.808V6.021q0-1.509-.032-2.736L39.241,40.373l1.368-1.462L3.3,1.824q1.227.032,2.752.031Z" transform="translate(0 28.715) rotate(-45)" />
 						</svg>
 					</div>
-					<h1>DemoniC<br />raSCals</h1>
+					<div id="text">
+						<h1>DemoniC<br />raSCals</h1>
+						<p>Volume 1</p>
+					</div>
+
 				</div>
 				<div id="right_top_right">
 					<a href="/" id="button_connect" className='pill_button'>
@@ -54,9 +58,21 @@ function App() {
 						<div id="content_right">
 							<h2>AnythiNg wOrth HAving takeS tiMe</h2>
 							<p>Join the waitlist</p>
+							<div id="button_group">
+								<a href="/" className="pill_button">Subscribed</a>
+								<button className='pill_button'>+</button>
+							</div>
+
 						</div>
 					</div>
-					<button id="button_arrow"></button>
+					<button id="button_arrow">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.156 10.392">
+							<g transform="translate(10.156) rotate(90)">
+								<rect id="Rectangle_5" data-name="Rectangle 5" />
+								<path id="Path_2" data-name="Path 2" d="M10.392,1.855,8.616,0H0V8.348l1.965,1.808V6.021q0-1.509-.032-2.736l6.9,6.682L10.2,8.506,3.3,1.824q1.227.032,2.752.031Z" />
+							</g>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</div>
