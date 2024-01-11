@@ -8,13 +8,11 @@ nav {
 	flex-direction: column;
 	background-color: var(--dark-gray);
 	border-radius: 999rem;
-	padding: 3rem 1rem 1rem 1rem;
+	padding-top: 4.5rem;
 	margin-bottom: 1.5rem;
 }
 
-.nav_button {
-	transition: all .2s ease-in-out;
-	height: 100%;
+#nav_logo {
 	width: 100%;
 	text-align: center;
 	display: flex;
@@ -22,14 +20,47 @@ nav {
 	align-items: center;
 
 	svg {
-		width: 25%;
+		transition: all .2s ease-in-out;
+		fill: #8E8B9C;
+		width: 60%;
+	}
+
+	&:hover {
+		svg {
+			transform: scale(1.3);
+			fill: var(--white);
+		}
+	}
+}
+
+.nav_button {
+	position: relative;
+	width: 100%;
+	text-align: center;
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 0.25rem;
+		transition: 0.05s all ease-in;
+	}
+
+	svg {
+		transition: 0.05s all ease-in;
+		height: 2rem;
 		min-width: 1rem;
-		fill: #FFFFFF;
+		fill: #FFFFFF52;
 		opacity: 0.5;
 	}
 
 	&:hover {
-		transform: scale(1.3);
+		&::after {
+			box-shadow: -0.25rem 0 1rem 0.25rem var(--accent-color-transparent);
+			background: var(--accent-color);
+		}
 
 		svg {
 			fill: var(--accent-color);
@@ -38,15 +69,14 @@ nav {
 	}
 
 	&.is_active {
+		&::after {
+			box-shadow: -0.25rem 0 1rem 0.25rem var(--accent-color-transparent);
+			background: var(--accent-color);
+		}
+
 		svg {
 			fill: var(--accent-color);
 			opacity: 1;
-		}
-	}
-
-	&#nav_logo {
-		svg {
-			width: 60%;
 		}
 	}
 }
@@ -58,22 +88,24 @@ nav {
 	background-color: var(--black);
 	border-radius: 999rem;
 	padding: 1rem 1rem 1.5rem 1rem;
+	margin: 0 1rem 1rem 1rem;
 }
 
 #user_image {
 	width: 100%;
 	height: auto;
 	border-radius: 100%;
-	transition: 0.2s ease-in-out;
+	transition: 0.1s ease-in;
 	margin-bottom: 1.5rem;
 
 	&:hover {
 		border: 0.2rem var(--accent-color) solid;
+		cursor: pointer;
 	}
 }
 
 #line {
 	stroke: #8e8b9c;
-	width: 100%;
+	width: 50%;
 	margin-bottom: 1.5rem;
 }
